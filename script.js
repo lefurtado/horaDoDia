@@ -14,16 +14,13 @@ function carregar() {
     setTimeout('carregar()', 500);
 
     msg.innerHTML = `Agora são ${hora}:${minutos}:${segundos}`
-    if (hora >= 5 && hora < 12) {
-        alert(`Bom dia!`)
+    if (hora >= 5 && hora < 12) {        
         img.src = "./img/fotomanha.png";
         document.body.style.background = '#ffe353';
-    } else if (hora >= 12 && hora < 18) {
-        alert(`Boa tarde!`)
+    } else if (hora >= 12 && hora < 18) {        
         img.src = "./img/fototarde.png";
         document.body.style.background = '#e5cba3';
-    } else {
-        alert(`Boa noite!`)
+    } else {        
         img.src = "./img/fotonoite.png";
         document.body.style.background = '#193f58';
     }
